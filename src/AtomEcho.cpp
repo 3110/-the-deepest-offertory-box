@@ -61,7 +61,7 @@ bool AtomEcho::playWav(FS& fs, const char* filename) {
         ESP_LOGE("AtomEcho", "WAV File is not found");
         return false;
     }
-    ESP_LOGE("AtomEcho", "Playing WAV file: %s", filename);
+    ESP_LOGD("AtomEcho", "Playing WAV file: %s", filename);
     File file = fs.open(filename);
 
     wav_header_t header;
