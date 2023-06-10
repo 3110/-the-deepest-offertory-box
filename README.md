@@ -35,6 +35,7 @@ VSCodeのPlatformIO IDEが必要です。Windows 11上で動くVSCodeで動作�
 ## 使用方法
 
 実際に使用する場所にATOM EchoとToFセンサーを設置してください。
+![接続例](/images/assembled-image.png)
 
 ![設置例](/images/installed-image.png)
 
