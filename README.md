@@ -56,3 +56,13 @@ ToF Unitは測定精度が±3%なので，閾値との±3%以内の距離の違�
 ### 距離測定の有効化・無効化
 
 起動時には距離測定が無効（ATOM EchoのボタンのLEDが消灯）になっています。ATOM Echoのボタンを押すと，LEDが緑色に点灯して測定を開始します。ATOM Echoのボタンを押すごとに有効・無効が切り替わります。
+
+## 配布用ファームウェアの作成
+
+M5Burnerで配布するファームウェアを作成するには，PlatformIOメニューにあるPROJECT TASKSからCustomの下にある「Generate User Custom」を選択します。
+
+![Generate User Customの選択](/images/generate-user-custom.png)
+
+ビルドが完了すると，`platformio.ini`の`env`セクションにある`custom_firmware_dir`で指定したディレクトリ（デフォルトは`firmware`）に配布用のファームウェア（`.bin`ファイル）が生成されます。
+
+M5Burnerでの配布方法は[M5Burner v3の使いかた](https://zenn.dev/saitotetsuya/articles/m5stack_m5burner_v3)を参照してください。
