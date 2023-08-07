@@ -54,7 +54,7 @@ void setup(void) {
     distance_unit_t threshold = prefs.getUShort(NVS_KEY_THRESHOLD, 0);
     echo.begin();
     echo.setVolume(VOLUME);
-    ESP_LOGD("Atom Echo", "Volume: %d", VOLUME);
+    ESP_LOGI("Atom Echo", "Volume: %d", VOLUME);
     echo.update();
     if (echo.isPressed() || threshold == 0) {
         ESP_LOGI("Trigger", "Calibration started");
@@ -75,7 +75,7 @@ void setup(void) {
         ESP_LOGE("Trigger", "Failed to initialize %s", trigger.getName());
         forever();
     }
-    ESP_LOGD("Trigger", "Distance Threshold: %dmm", threshold);
+    ESP_LOGI("Trigger", "Distance Threshold: %dmm", threshold);
     trigger.enable();
 }
 
