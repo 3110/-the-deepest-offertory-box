@@ -63,4 +63,8 @@ M5Burnerで配布するファームウェアを作成するには，PlatformIO�
 
 ビルドが完了すると，`platformio.ini`の`env`セクションにある`custom_firmware_dir`で指定したディレクトリ（デフォルトは`firmware`）に配布用のファームウェア（`.bin`ファイル）が生成されます。
 
-M5Burnerでの配布方法は[M5Burner v3の使いかた](https://zenn.dev/saitotetsuya/articles/m5stack_m5burner_v3)を参照してください。
+配布用ファームウェアには音源ファイルが埋め込まれ，一緒に配布することができるようになります。埋め込まれた音源ファイルは起動時にSPIFFSに同名のファイルがあるか確認し，なければSPIFFSに書き込みます。
+
+配布用ファームウェアを書き込んで初めて起動する場合，SPIFFSをフォーマットし，音源ファイルの書き込みが行われるため，測定開始になるまでに20秒くらいかかります。
+
+M5Burnerでのファームウェアの配布方法は[M5Burner v3の使いかた](https://zenn.dev/saitotetsuya/articles/m5stack_m5burner_v3)を参照してください。
