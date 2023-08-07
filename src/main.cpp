@@ -76,6 +76,7 @@ void setup(void) {
         forever();
     }
     ESP_LOGD("Trigger", "Distance Threshold: %dmm", threshold);
+    trigger.enable();
 }
 
 void loop(void) {
