@@ -88,9 +88,14 @@ public:
             this->_measurable->getMinDistance() * (1.0 + acc) + 0.5);
         const T upper = static_cast<T>(this->_threshold * (1.0 - acc) + 0.5);
         const bool triggered = lower < distance && distance < upper;
-        ESP_LOGD(
-            "Trigger", "Moving Mean Distance(window: %d): %dmm (%dmm, %dmm)%s",
-            WINDOW_SIZE, distance, lower, upper, triggered ? " Fire!" : "");
+        if (triggered) {
+            ESP_LOGI("Trigger", "Fired: %dmm (%dmm, %dmm)", distance, lower,
+                     upper);
+        } else {
+            ESP_LOGD("Trigger",
+                     "Moving Mean Distance(window: %d): %dmm (%dmm, %dmm)",
+                     WINDOW_SIZE, distance, lower, upper);
+        }
         return triggered;
     }
 

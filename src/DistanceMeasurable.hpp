@@ -92,7 +92,7 @@ public:
             if (callback != nullptr) {
                 callback(c);
             }
-            ESP_LOGD(getName(), "Calibration %3d: Distance: %dmm", c, distance);
+            ESP_LOGI(getName(), "Calibration %3d: Distance: %dmm", c, distance);
         }
         return static_cast<T>(sum / count);
     };
