@@ -2,7 +2,7 @@
 
 世界一深い賽銭箱があると，ついお賽銭を入れたくなりませんか？
 
-[![世界一深い賽銭箱](/images/the-deepest-offetory-box-youtube.png)](https://www.youtube.com/watch?v=967QOeop2Vo)
+[![世界一深い賽銭箱](/images/the-deepest-offetory-box-youtube.png)](https://youtu.be/5y6eXByXsKY)
 
 今回作ったしくみは，スピーカーを内蔵したATOM Echoと距離が測定できるToF Unitを使用し，距離の変化をトリガーとして何らかのリアクションを返す（今回の場合は音を鳴らす）しくみとして汎用的に使用できます。
 
