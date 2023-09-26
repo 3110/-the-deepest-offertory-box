@@ -35,11 +35,14 @@ VSCodeのPlatformIO IDEが必要です。Windows 11上で動くVSCodeで動作�
 ## 使用方法
 
 実際に使用する場所にATOM EchoとToFセンサーを設置してください。
+
 ![接続例](/images/assembled-image.png)
 
 ![設置例](/images/installed-image.png)
 
 USBケーブルを挿して起動すれば，自動的にデフォルトの距離を測定してその平均値を閾値として設定します。閾値が決まると測定準備は完了です。ATOM EchoのLEDが緑色に点灯し，距離の測定が始まります。測定距離が短くなる（今回の例ではお金が賽銭箱を通った）とトリガーが発火し，落下音がします。
+
+![システム構成](/images/system-configration.png)
 
 ### 測定距離の閾値の設定
 
